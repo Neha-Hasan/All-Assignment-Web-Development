@@ -71,7 +71,7 @@
   } */
 
 
-/* Card section1 CSS start */
+/* Card pillars CSS start */
 .card-content{
     display: flex;
     align-items: center;
@@ -94,4 +94,49 @@
     display: flex;
    flex-direction: column;
     margin: 12px 0px;
+}
+/* Card Vision CSS start */
+.card-Vision-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+}
+.card-Vision-content-description {
+    box-sizing: border-box;
+    width: 410.67px;
+    height: 325px;
+    border-radius: 16px;
+}
+/* Specific styling for each card */
+.card1 {
+    background: rgba(84, 144, 245, 0.2);
+}
+
+.card2 {
+    background: rgb(198, 228, 214);
+}
+
+.card3 {
+    background: rgb(247, 235, 207);
+}
+.sub-title-Vision{
+    rgba(14, 14, 14, 0.7)
+    font-family: Fira Sans;
+    width: 346.67px;
+    height: 72px;
+    display: flex;
+   flex-direction: column;
+    margin: 12px 0px;
+}
+.card-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 48;
+    padding: 11px 20px 11px 20px;
+    border-radius: 8px;
+    background: rgb(84, 144, 245);
+    box-shadow: none;
 }
