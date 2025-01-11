@@ -1,10 +1,12 @@
+body{
+ background-color: #e6e4e4;
+}
 .frame{
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    background-color: rgb(245, 245, 245); 
+    justify-content: space-between; 
     
 }
 .frame .frame-htag{
@@ -60,15 +62,14 @@
     background: rgb(0, 106, 80);
     font-size: 16px; 
     padding: 10px 20px; 
-    border: none; 
-    border-radius: 
-    cursor: pointer; 
+    border: none;  
     color: rgb(255, 255, 255) 
   }
   
-  /* .btn:hover {
-    background-color: #2980b9; 
-  } */
+  button:hover {
+    cursor: pointer; 
+    background-color: #b2dbea; 
+  }
 
 
 /* Card pillars CSS start */
@@ -76,6 +77,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    /* padding: 24px; */
 
 }
 .card-content-description{
@@ -83,7 +85,8 @@
     width: 302px;
     height: 244px;
     border-radius: 16px;
-    background: rgb(255, 255, 255)
+    background: rgb(255, 255, 255);
+    padding: 24px;
 
 }
 .sub-title{
@@ -96,6 +99,9 @@
     margin: 12px 0px;
 }
 /* Card Vision CSS start */
+#card-Vision{
+    margin-top: 80px;
+}
 .card-Vision-content{
     display: flex;
     align-items: center;
@@ -105,8 +111,9 @@
 .card-Vision-content-description {
     box-sizing: border-box;
     width: 410.67px;
-    height: 325px;
+    height: fit-content;
     border-radius: 16px;
+    padding: 32px;
 }
 /* Specific styling for each card */
 .card1 {
@@ -121,7 +128,7 @@
     background: rgb(247, 235, 207);
 }
 .sub-title-Vision{
-    rgba(14, 14, 14, 0.7)
+    color: rgba(14, 14, 14, 0.7);
     font-family: Fira Sans;
     width: 346.67px;
     height: 72px;
@@ -137,6 +144,359 @@
     gap: 48;
     padding: 11px 20px 11px 20px;
     border-radius: 8px;
-    background: rgb(84, 144, 245);
     box-shadow: none;
+}
+#card-btn1{
+    background-color: ;
+}
+
+/* some text about dr. youns */
+#text {
+    position: relative;
+    width: 1280px;
+    height: 256px;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Fira Sans;
+    color: #333;
+}
+
+#text > div:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Places the background behind the text */
+}
+
+/* opinion-section CSS start */
+
+.opinion-section {
+    width: 80%;
+    max-width: 1280px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .opinion-section h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .opinion-table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .opinion-header {
+    display: flex;
+    background-color: #d6f0d6;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .opinion-header .question,
+  .opinion-header .opinion {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .opinion-row {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .opinion-row .question {
+    flex: 3;
+    padding-right: 10px;
+  }
+  
+  .opinion-row .opinion {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .opinion-row select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .opinion-row:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+
+  /* News card CSS start */
+
+
+  .recent-news {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.recent-news h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recent-news .description {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+.news-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.news-card {
+    display: flex;
+    gap: 15px; 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+.news-card img {
+    flex-shrink: 0; 
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.news-cards {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.news-card {
+    display: flex;
+    gap: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    align-items: center;
+}
+.news-card:nth-child(even) {
+    flex-direction: row-reverse; 
+}
+.news-card img {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.news-content {
+    flex-grow: 1;
+}
+
+.news-content h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-content .meta {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.news-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.news-content .read-more {
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    background-color: #28a745;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.news-content .read-more:hover {
+    background-color: #218838;
+}
+
+
+/* Donate Section  css start*/
+
+.donate-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.donate-section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.donate-section p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.donation-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.donation-options button {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.donation-options .selected {
+    background-color: #52b788;
+    color: #fff;
+}
+
+.donation-options button:hover {
+    background-color: #52b788;
+    color: #fff;
+}
+
+.other-amount {
+    padding: 10px;
+    width: 50%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.donate-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.donate-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Newsletter Section css start */
+.newsletter-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #eafaf1;
+}
+
+.newsletter-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.newsletter-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #0056b3;
+}
+
+.no-spam {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Footer section css start */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
