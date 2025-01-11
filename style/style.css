@@ -66,8 +66,32 @@
     color: rgb(255, 255, 255) 
   }
   
-  .btn:hover {
+  /* .btn:hover {
     background-color: #2980b9; 
-  }
-  
+  } */
 
+
+/* Card section1 CSS start */
+.card-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+}
+.card-content-description{
+    box-sizing: border-box;
+    width: 302px;
+    height: 244px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255)
+
+}
+.sub-title{
+    color: rgba(14, 14, 14, 0.7);
+    font-family: Fira Sans;
+    width: 346.67px;
+    height: 72px;
+    display: flex;
+   flex-direction: column;
+    margin: 12px 0px;
+}
