@@ -1,121 +1,195 @@
-body{
- background-color: #e6e4e4;
+/* General Styles */
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #0e0e0e;
 }
-.frame{
+
+.container {
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Section */
+.frame {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between; 
-    
+    margin: 20px 0;
 }
-.frame .frame-htag{
-   flex-grow: 0;
-    margin: 0px 10px;
+
+.frame .frame-htag {
+    font-size: 32px;
+    font-weight: 700;
     color: rgb(14, 14, 14);
-   font-family: Fira Sans;
-   font-size: 32px;
-   font-weight: 700;
-   line-height: 38px;
-   text-align: left;
 }
-.frame .sign-in{
-    gap: 48;
-    padding: 15px 30px 15px 30px;
-    box-sizing: border-box;
+
+.frame .sign-in {
+    padding: 10px 20px;
     border: 1px solid rgb(0, 106, 80);
     border-radius: 8px;
-    margin: 0px 10px;
-    padding: 15px 30px 15px 30px;
-
+    background: transparent;
+    color: rgb(0, 106, 80);
+    font-size: 16px;
+    cursor: pointer;
 }
-/* Hero CSS start */
+
+.frame .sign-in:hover {
+    background: rgb(0, 106, 80);
+    color: white;
+}
+
+/* Hero Section */
 #hero {
-    width: 1280px; 
-    margin: 80px auto; 
-    padding: 80px 100px; 
-    border-radius: 24px; 
-    background: rgb(198, 228, 214); 
- 
+    max-width: 1280px;
+    margin: 40px auto;
+    padding: 40px;
     display: flex;
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 20px;
- }
- 
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(198, 228, 214);
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .hero-content {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
-    gap: 20px; 
+    gap: 30px;
+    flex-wrap: wrap;
 }
+
 .hero-content-description {
-    margin-right: 20px; 
+    flex: 1;
+    max-width: 600px;
 }
 
-.hero-image {
-    margin-left: 20px; 
+.hero-content-description .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
-.btn {
-    border-radius: 8px;
-    background: rgb(0, 106, 80);
-    font-size: 16px; 
-    padding: 10px 20px; 
-    border: none;  
-    color: rgb(255, 255, 255) 
-  }
-  
-  button:hover {
-    cursor: pointer; 
-    background-color: #b2dbea; 
-  }
 
-
-/* Card pillars CSS start */
-.card-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    /* padding: 24px; */
-
-}
-.card-content-description{
-    box-sizing: border-box;
-    width: 302px;
-    height: 244px;
-    border-radius: 16px;
-    background: rgb(255, 255, 255);
-    padding: 24px;
-
-}
-.sub-title{
+.hero-content-description .sub-title {
+    font-size: 18px;
+    margin-bottom: 20px;
     color: rgba(14, 14, 14, 0.7);
-    font-family: Fira Sans;
-    width: 346.67px;
-    height: 72px;
-    display: flex;
-   flex-direction: column;
-    margin: 12px 0px;
 }
-/* Card Vision CSS start */
-#card-Vision{
-    margin-top: 80px;
-}
-.card-Vision-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
 
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
 }
+
+.btn {
+    padding: 10px 20px;
+    background: rgb(0, 106, 80);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(0, 85, 65);
+}
+
+/* Card of Pillar Section */
+#card-pillars {
+    max-width: 1280px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#card-pillars h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+}
+
+.card-content-description {
+    flex: 1; 
+    min-width: 250px; 
+    max-width: 300px; 
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-content-description:hover {
+    transform: translateY(-10px);
+}
+
+.card-icon img {
+    max-width: 60px;
+    margin-bottom: 12px;
+}
+
+.card-content-description .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.card-content-description .sub-title {
+    font-size: 14px;
+    color: rgba(14, 14, 14, 0.7);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .card-content {
+        flex-wrap: nowrap; 
+        gap: 10px;
+        overflow-x: scroll;
+    }
+}
+
+
+/* Card Vision CSS */
+#card-Vision {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.card-Vision-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+}
+
 .card-Vision-content-description {
     box-sizing: border-box;
-    width: 410.67px;
-    height: fit-content;
+    width: 30%;
     border-radius: 16px;
     padding: 32px;
+    text-align: center;
 }
-/* Specific styling for each card */
+
 .card1 {
     background: rgba(84, 144, 245, 0.2);
 }
@@ -127,120 +201,134 @@ body{
 .card3 {
     background: rgb(247, 235, 207);
 }
-.sub-title-Vision{
+
+.sub-Vision-title {
     color: rgba(14, 14, 14, 0.7);
-    font-family: Fira Sans;
-    width: 346.67px;
-    height: 72px;
-    display: flex;
-   flex-direction: column;
+    font-family: 'Fira Sans', sans-serif;
     margin: 12px 0px;
 }
-.card-btn{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 48;
-    padding: 11px 20px 11px 20px;
+
+.card-btn {
+    padding: 10px 20px;
     border-radius: 8px;
-    box-shadow: none;
-}
-#card-btn1{
-    background-color: ;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
-/* some text about dr. youns */
-#text {
-    position: relative;
-    width: 1280px;
-    height: 256px;
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 30px 40px;
+.card-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Common Box Styles */
+.common-box {
+    width: 80%;
+    max-width: 1280px;
+    margin: 30px auto;
+    padding: 30px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-family: Fira Sans;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Fira Sans', sans-serif;
     color: #333;
 }
 
-#text > div:first-child {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* Places the background behind the text */
+/* Specific Styles for text */
+#text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-/* opinion-section CSS start */
-
-.opinion-section {
-    width: 80%;
-    max-width: 1280px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-  }
-  
-  .opinion-section h1 {
-    font-size: 24px;
-    text-align: center;
+#text img {
+    max-width: 100%;
+    height: auto;
     margin-bottom: 20px;
-  }
-  
-  .opinion-table {
+}
+
+#text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Specific Styles for .opinion-section */
+.opinion-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.opinion-table {
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
-  }
-  
-  .opinion-header {
+}
+
+.opinion-header {
     display: flex;
     background-color: #d6f0d6;
     font-weight: bold;
     padding: 10px;
-  }
-  
-  .opinion-header .question,
-  .opinion-header .opinion {
-    flex: 1;
     text-align: center;
-  }
-  
-  .opinion-row {
+}
+
+.opinion-row {
     display: flex;
-    padding: 10px;
+    padding: 15px;
     border-top: 1px solid #ccc;
-  }
-  
-  .opinion-row .question {
+}
+
+.opinion-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.opinion-row .question {
     flex: 3;
     padding-right: 10px;
-  }
-  
-  .opinion-row .opinion {
+    font-size: 16px;
+}
+
+.opinion-row .opinion {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .opinion-row select {
-    padding: 5px 10px;
+}
+
+.opinion-row select {
+    padding: 8px 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
-  }
-  
-  .opinion-row:nth-child(even) {
-    background-color: #f9f9f9;
-  }
+}
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .common-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .opinion-row {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .opinion-row .question,
+    .opinion-row .opinion {
+        flex: unset;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #text p {
+        font-size: 14px;
+    }
+}
 
   /* News card CSS start */
 
