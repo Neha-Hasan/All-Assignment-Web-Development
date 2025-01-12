@@ -57,8 +57,9 @@ body {
 }
 
 .hero-content {
+    width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
 }
@@ -72,12 +73,14 @@ body {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
+     color: rgba(14, 14, 14, 0.7);
 }
 
 .hero-content-description .sub-title {
-    font-size: 18px;
+    font-size: 56px;
     margin-bottom: 20px;
-    color: rgba(14, 14, 14, 0.7);
+    font-weight: bold;
+   
 }
 
 .hero-image img {
@@ -104,7 +107,7 @@ body {
 #card-pillars {
     max-width: 1280px;
     margin: 40px auto;
-    text-align: center;
+    
 }
 
 #card-pillars h1 {
@@ -129,7 +132,7 @@ body {
     background: white;
     border-radius: 16px;
     padding: 20px;
-    text-align: center;
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -172,7 +175,9 @@ body {
 /* Card Vision CSS */
 #card-Vision {
     margin-top: 80px;
-    text-align: center;
+    width: 1280px;
+    margin: 0 auto;
+   
 }
 
 .card-Vision-content {
@@ -187,7 +192,7 @@ body {
     width: 30%;
     border-radius: 16px;
     padding: 32px;
-    text-align: center;
+   
 }
 
 .card1 {
@@ -238,21 +243,23 @@ body {
 #text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    position: relative;
+    
 }
 
 #text img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    
+    position: absolute;
 }
 
 #text p {
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 20px;
+   
 }
+
 
 /* Specific Styles for .opinion-section */
 .opinion-section h1 {
@@ -270,10 +277,10 @@ body {
 
 .opinion-header {
     display: flex;
-    background-color: #d6f0d6;
+    background-color: rgb(198, 228, 214);
     font-weight: bold;
     padding: 10px;
-    text-align: center;
+    justify-content: space-between;
 }
 
 .opinion-row {
@@ -288,14 +295,14 @@ body {
 
 .opinion-row .question {
     flex: 3;
-    padding-right: 10px;
+    
     font-size: 16px;
 }
 
 .opinion-row .opinion {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
 
@@ -304,6 +311,15 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
+}
+
+
+/* recent section starts */
+
+#news
+{
+    width: 1280px;
+    margin: 20px auto;
 }
 
 /* Responsive Design */
@@ -447,8 +463,10 @@ body {
 .donate-section {
     text-align: center;
     padding: 50px 20px;
-    background-color: #fff;
+    
     margin-bottom: 20px;
+    width: 1280px;
+    margin: 0 auto;
 }
 
 .donate-section h1 {
@@ -479,22 +497,27 @@ body {
 }
 
 .donation-options .selected {
-    background-color: #52b788;
-    color: #fff;
+    background-color: rgb(198, 228, 214);
+   
 }
 
 .donation-options button:hover {
-    background-color: #52b788;
-    color: #fff;
+    background-color: rgb(198, 228, 214);
+    
 }
 
 .other-amount {
+    display: flex;
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
     padding: 10px;
-    width: 50%;
-    max-width: 300px;
+    text-align: center;
+    font-size: 20px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    background-color: #ffffff;
 }
 
 .donate-btn {
@@ -516,7 +539,9 @@ body {
 .newsletter-section {
     text-align: center;
     padding: 50px 20px;
-    background-color: #eafaf1;
+    background-color: rgb(198, 228, 214);
+    width: 1280px;
+    margin: 20px auto;
 }
 
 .newsletter-section h2 {
@@ -528,12 +553,14 @@ body {
     font-size: 1rem;
     color: #555;
     margin-bottom: 20px;
+    max-width: 600px;
+    text-align: center;
+    margin: 10px auto;
 }
 
 .newsletter-form {
     display: flex;
     justify-content: center;
-    gap: 10px;
     margin-bottom: 10px;
 }
 
@@ -547,17 +574,12 @@ body {
 
 .newsletter-form button {
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
+   
+    border-top-right-radius:  5px;
+    border-bottom-right-radius:  5px;
+    
 }
 
-.newsletter-form button:hover {
-    background-color: #0056b3;
-}
 
 .no-spam {
     font-size: 0.9rem;
@@ -568,13 +590,15 @@ body {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: white;
+    
+    
 }
 
 footer p {
-    margin: 0 0 10px;
-    font-size: 1.2rem;
+    margin: 20px 0px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .social-icons {
